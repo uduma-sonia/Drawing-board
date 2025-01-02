@@ -1,0 +1,127 @@
+@import '@fontsource/montserrat/100.css';
+@import '@fontsource/montserrat/200.css';
+@import '@fontsource/montserrat/300.css';
+@import '@fontsource/montserrat/400.css';
+@import '@fontsource/montserrat/500.css';
+@import '@fontsource/montserrat/600.css';
+@import '@fontsource/montserrat/700.css';
+@import '@fontsource/montserrat/800.css';
+@import '@fontsource/montserrat/900.css';
+@import url('./styles/controls.css');
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	font-family: 'Montserrat';
+	background-color: var(--app-bg-color);
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+	font-family: 'Montserrat';
+}
+
+button {
+	transition: all 0.3s;
+	font-family: 'Montserrat';
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.controls-container {
+	position: absolute;
+	width: 45px;
+	left: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 1px solid rgb(155, 155, 155);
+	border-radius: 14px;
+	padding: 10px;
+	background-color: white;
+	z-index: 999;
+}
+
+.controls-button-container {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.control-button {
+	border: 1px solid rgb(177, 176, 176);
+	background-color: white;
+	border-radius: 14px;
+	height: 45px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.control-button:focus,
+.control-button:active,
+.control-button:hover {
+	border: 1px solid #000000 !important;
+}
+
+.shadow-md {
+	--tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	--tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+		var(--tw-shadow);
+}
+
+.control-button img {
+	height: 25px;
+}
+
+.control-button .color-picker {
+	width: 28px;
+	height: 28px;
+	border-radius: 99999px;
+	font-size: 0;
+}
+
+.back-container {
+	position: absolute;
+	top: 10px;
+	left: 8px;
+	width: 50px;
+}
+
+.back-container button {
+	border: 1px solid rgb(155, 155, 155);
+	background-color: white;
+	border-radius: 14px;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 45px;
+}
+
+.hamburger-icon {
+	height: 25px;
+}
