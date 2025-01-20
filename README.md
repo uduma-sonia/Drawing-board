@@ -1,4 +1,4 @@
-The is a simple web-based drawing tool built using HTML5 Canvas.
+Simple svelte project using HTML5 canvas
 
 ## Features
 
